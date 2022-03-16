@@ -1,0 +1,17 @@
+.top-nav {
+    display: flex;
+    gap: 2em;
+    .logo{
+        margin-right: auto;
+        width: 100px;
+        height: 50px;
+        background-color: aqua;
+    }
+    .nav-links {
+        font-size: 35px;
+        border: 1px solid black;
+        width: 175px;
+        text-align: center;
+        padding: 0 15px;
+    }
+}
