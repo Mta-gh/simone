@@ -15,7 +15,11 @@
         width: 100%;
         max-height: 50rem;
         aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: aquamarine;
         border-radius: 100%;
+        overflow: hidden;
     }
 }

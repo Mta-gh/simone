@@ -4,15 +4,13 @@
     top: 0;
     padding: 0 3rem;
     display: flex;
+    align-items: center;
     gap: 6em;
     background: $white;
     border-bottom:  solid 1px black;
     box-shadow: 0 3px 15px $shadow;
     .logo{
         margin-right: auto;
-        width: 100px;
-        height: 50px;
-        background-color: aqua;
     }
     .nav-links {
         font-size: 1.6rem;
@@ -21,3 +19,9 @@
         
     }
 }
+
+.logo h1 {
+    margin: 1rem 0;
+    text-shadow: 0 0 7px $txt-shadow;
+}
+
