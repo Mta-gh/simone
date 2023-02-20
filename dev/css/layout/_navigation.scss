@@ -1,6 +1,7 @@
 .top-nav {
     display: flex;
-    gap: 2em;
+    gap: 6em;
+    border-bottom:  solid 1px black;
     .logo{
         margin-right: auto;
         width: 100px;
@@ -8,10 +9,9 @@
         background-color: aqua;
     }
     .nav-links {
-        font-size: 35px;
-        border: 1px solid black;
-        width: 175px;
+        font-size: 1.6rem;
         text-align: center;
-        padding: 0 15px;
+        padding: 1.5rem;
+        
     }
 }

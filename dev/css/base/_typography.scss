@@ -1,15 +1,18 @@
 // Importing fonts : use @import
 
-@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+// @font-face {
+//     font-family: $ff-prim;
+//     src: url("../assets/Mattone-150.woff") format("woff2"),
+//     url("../assets/Mattone-150.woff2") format("woff");
+//     font-display: swap;
+    
+// }
 
 @font-face {
-    font-family: "Mattone";
-    src: url("../assets/Mattone-150.woff") format("woff2"),
-        url("../assets/Mattone-150.woff2") format("woff");
-  }
-
-  @font-face {
-    font-family: "Ortica";
-    src: url("../assets/Ortica-Light.woff") format("woff2"),
-        url("../assets/Ortica-Light.woff2") format("woff");
-  }
+    font-family: $ff-sec;
+    src: url("../assets/labmono-regular-web.woff2") format("woff2"),
+    url("../assets/labmono-regular-web.woff") format("woff");
+    font-display: swap;
+}

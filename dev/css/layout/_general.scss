@@ -1,4 +1,12 @@
+html {
+    font-size: 10px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 a {
+    font-family: $ff-sec;
     text-decoration: none;
     color: black;
 }
