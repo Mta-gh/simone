@@ -3,7 +3,18 @@ html {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 3rem;
+    width: 100%;
+    
+    &.xl { max-width: 150rem; }
+    &.lg { max-width: 120rem; }
+    &.md { max-width: 86rem; }
+    &.sm { max-width: 70rem; }
+}
 
 a {
     font-family: $ff-sec;
