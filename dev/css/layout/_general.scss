@@ -5,15 +5,12 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    background-image: url(../img/textureSimone.webp);
-}
+body { background-image: url(../img/textureSimone.webp); }
 
 .container {
     margin: 0 auto;
     padding: 0 3rem;
     width: 100%;
-    
     &.xl { max-width: 150rem; }
     &.lg { max-width: 120rem; }
     &.md { max-width: 86rem; }
@@ -30,6 +27,7 @@ h3 { font-family: $ff-prim;}
 h2 {
     font-family: $ff-sec;
     font-size: 11rem;
+    margin: 0;
 }
 
 h1 { font-size: 5rem; }
@@ -43,13 +41,10 @@ h3 { font-size: 5rem; }
     }
 }
 
-
 a {
     font-family: $ff-sec;
     text-decoration: none;
     color: black;
 }
 
-img {
-    max-width: 100%;
-}
+img { max-width: 100%; }

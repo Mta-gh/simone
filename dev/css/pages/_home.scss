@@ -1,0 +1,20 @@
+.sect__menu { 
+  position: relative; 
+  margin: 0 -6rem;
+  height: 100rem;
+}
+
+.menu__title {
+  position: absolute;
+  top: 0;
+}
+
+.menu__title__left {
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.menu__title__right {
+  right: 0;
+  transform: rotate(90deg);
+}
