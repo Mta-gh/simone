@@ -18,3 +18,8 @@
   right: 0;
   transform: rotate(90deg);
 }
+
+.sect__bg {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+}
