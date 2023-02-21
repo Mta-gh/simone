@@ -21,5 +21,41 @@
 
 .sect__bg {
   display: grid;
-  grid-template-columns: repeat(1fr, 2);
+  grid-template-columns: repeat(2, 1fr);
+  .img__container {
+    overflow: hidden;
+    border: 1px solid $black;
+    box-shadow: 0 0 12px $shadow;
+  }
+}
+
+
+.sect__menu__drink {
+  .menu__title {top: 12rem;}
+}
+
+
+.sect__bg__food {
+  .img__container:nth-of-type(2) {
+    background: url(../img/food-bg.webp) center no-repeat;
+    background-size: cover;
+    height: 50rem;
+  }
+  .img__container:nth-of-type(3) {
+    background: url(../img/food-bg2.webp) center no-repeat;
+    background-size: cover;
+    height: 65rem;
+  }
+}
+
+.sect__bg__drink {
+  .img__container:nth-of-type(2) {
+    background: url(../img/food-bg3.webp) center no-repeat;
+    height: 50rem;
+  }
+  .img__container:nth-of-type(3) {
+    background: url(../img/food-bg4.webp) center no-repeat;
+    background-size: cover;
+    height: 65rem;
+  }
 }
