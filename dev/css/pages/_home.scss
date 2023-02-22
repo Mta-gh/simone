@@ -1,7 +1,12 @@
+.story__content,
+.contact,
+.menu__emojis {
+  flex-direction: column;
+}
+
 .sect__menu { 
   position: relative; 
   margin: 0 -6rem;
-  // height: 100rem;
 }
 
 .menu__title {
@@ -26,7 +31,6 @@
 
 .story__content {
   max-width: 55rem;
-  flex-direction: column;
   align-items: start;
   padding: 3rem;
 }
@@ -37,10 +41,6 @@
   justify-content: center;
   font-size: 2.5rem;
   font-family: $ff-sec;
-}
-
-.contact {
-  flex-direction: column;
 }
 
 .contact:nth-of-type(1) {
@@ -92,7 +92,6 @@
 .menu__emojis {
   font-size: 4rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   position: absolute;
   left: 12rem;
@@ -102,3 +101,6 @@
     margin-bottom: 2rem;
   }
 }
+
+
+
