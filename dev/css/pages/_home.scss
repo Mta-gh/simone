@@ -24,7 +24,8 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.about__story {
+.story__content {
+  max-width: 55rem;
   flex-direction: column;
   align-items: start;
   padding: 3rem;
@@ -32,7 +33,18 @@
 
 .about__contact {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: $ff-sec;
+}
+
+.contact {
+  flex-direction: column;
+}
+
+.contact:nth-of-type(1) {
+  justify-self: start;
 }
 
 .sect__bg {
