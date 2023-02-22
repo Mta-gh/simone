@@ -19,6 +19,22 @@
   transform: rotate(90deg);
 }
 
+.sect__about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__story {
+  flex-direction: column;
+  align-items: start;
+  padding: 3rem;
+}
+
+.about__contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .sect__bg {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
