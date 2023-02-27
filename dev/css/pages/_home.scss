@@ -105,5 +105,44 @@
   }
 }
 
+// Each menu element
+.article__menu {
+  position: absolute;
+  max-width: 70rem;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  cursor: move;
+}
 
+.article__menu__saison {
+  top: 0;
+  left: 30%;
+}
 
+.menu__parts,
+.menu__line {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu__line {
+  position: relative;
+  align-items: start;
+  font-family: $ff-sec;
+  font-size: 1.6rem;
+  padding-left: 7rem;
+  p { margin: 0; }
+}
+
+.menu__line__price {
+  align-self: end;
+}
+
+.menu__svg {
+  position: absolute;
+  top: .2rem;
+  left: 2.6rem;
+}
