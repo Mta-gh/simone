@@ -1,4 +1,6 @@
 import * as THREE from 'https://unpkg.com/three/build/three.module.js'
+import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
+
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 1000, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -28,8 +30,25 @@ var material2 = new THREE.MeshBasicMaterial( { map: textureMug, color: 0xfffff ,
 var cylinder2 = new THREE.Mesh( geometry2, material2 );
 scene.add( cylinder2 );
 
-camera.position.z = 20;
+const loader = new FBXLoader();
+loader.load('../assets/crockery_cup.fbx', (object) => {
+  scene.add(object);
+});
 
+loader.load(
+  '../assets/coffee-mug-school-project/source/mug.fbx',
+  (object) => {
+      scene.add(object)
+  },
+  (xhr) => {
+      console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+  },
+  (error) => {
+      console.log(error)
+  }
+)
+
+camera.position.z = 20;
 
 function render() {
 	requestAnimationFrame(render);
